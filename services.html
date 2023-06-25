@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!-- Kishan, ArunaiKumar - 05/22/2023 -->
+<!-- Lavanya, Rachakula - 05/22/2023 -->
+<!-- Sai Kumar, Gajjela - 05/22/2023 -->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="Assets/tab_icon.png" type="image/png">
+    <title>Dog's Hall of Fame</title>
+    <link rel="stylesheet" href="styles.css" />
+     <!--Media Queries CSS -->
+     <link rel="stylesheet" href="media-queries.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="formSubmit.js"></script>
+  </head>
+  <body class="background-element">
+    <header>
+      <a href="index.html">
+        <img
+          id="myLogo"
+          src="Assets/logo.png"
+          alt=" logo for Dog Hall of Fame"
+          height="80"
+          width="100"
+        />
+      </a>
+      <nav id="navlist">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <!-- mob nav -->
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html"><img style="width: 62px; height: 62px;"
+            id="myLogo1"
+            src="Assets/logo.png"
+            alt=" logo for Dog Hall of Fame"
+            height="80"
+            width="100"
+        /></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="winners.html">Winners</a>
+        <a href="nominations.html">Nominations</a>
+        <a href="services.html">Services</a>
+        <a href="About Us.html">About Us</a>
+          <a style=" margin-top: 23px;
+          margin-right: 15px;
+          padding: 10px;" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    
+    <!-- /mob nav -->
+
+    <main>
+      <h1>Dog's Services Request Form</h1>
+
+      <form id="myForm">
+        <div>
+          <label for="Name">Name</label>
+          <input type="text" id="name" name="Name" required />
+          <span class="error-message"></span>
+        </div>
+
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" id="email" name="Email" required />
+          <span class="error-message"></span>
+        </div>
+
+        <div>
+          <label for="Phone">Phone</label>
+          <input type="tel" id="phone" name="Phone" required />
+          <span class="error-message"></span>
+        </div>
+
+        <div>
+          <label for="Service">Service</label>
+          <select id="service" name="Service" required>
+            <option value="">Select a service</option>
+            <option value="Dog Walking">Dog Walking</option>
+            <option value="Dog Grooming">Dog Grooming</option>
+            <option value="Dog Boarding">Dog Boarding</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+
+        <div>
+          <label for="Message">Message</label>
+          <textarea id="message" name="Message" required></textarea>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="button-container">
+          <input
+            type="button"
+            value="Cancel"
+            onclick="window.location.href='services.html'"
+          />
+          <button
+            type="submit"
+            id="submitButton"
+            onclick="event.preventDefault(); validateForm()"
+          >
+            Submit
+          </button>
+        </div>
+
+        <!--<div class="button-container">-->
+          <!-- Add a new button to display the table -->
+          <!--<input type="button" value="View Requests" onclick="displayTable()" />-->
+
+          <!-- Add a new button to submit the form -->
+          <!--<button
+            type="submit"
+            id="submitButton"
+            onclick="event.preventDefault(); validateForm()"
+          >
+            Submit
+          </button>
+        </div>-->
+
+        <br />
+        <br />
+        <br />
+        <br />
+      </form>
+
+
+       
+      <!-- Create a table container -->
+      <div id="tableContainer" style="display: none">
+
+          <!--<h2>Service Requests</h2>-->
+          <div style="margin-top:560px;color:white;font-weight: bolder; font-size:large;;"></div>
+          <table id="requestTable">
+            <h1>Submitted Requests in this session</h1>
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Service</th>
+                      <th>Message</th>
+                      <th>Actions</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Table rows will be dynamically generated using JavaScript -->
+              </tbody>
+          </table>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div id="toastMessage" class="toast">
+        Your request has successfully been submitted!
+      </div>
+    </main>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Dog's <span>Hall of Fame</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <span class="footer-about-us">
+          <p>
+            Dog's Hall of Fame honors exceptional dogs who have made a lasting
+            impact. Discover inspiring stories of bravery, loyalty, and
+            remarkable achievements. Join us as we celebrate the profound bond
+            between humans and dogs. Explore the extraordinary accomplishments
+            of our inductees and be inspired by their incredible journeys.
+            Experience the power of the canine spirit at the Dog's Hall of Fame.
+          </p>
+        </span>
+        <br>
+        <p class="footer-company-name">Dog's Hall of Fame © 2023</p>
+      </div>
+
+      <div class="footer-right">
+        <p>Contact Us</p>
+
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+  <script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  </script>
+    
+      </script>
+</html>

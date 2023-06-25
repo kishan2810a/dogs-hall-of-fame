@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!-- Kishan, ArunaiKumar - 05/22/2023 -->
+<!-- Lavanya, Rachakula - 05/22/2023 -->
+<!-- Sai Kumar, Gajjela - 05/22/2023 -->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="Assets/tab_icon.png" type="image/png" />
+    <title>Dog's Hall of Fame</title>
+    <link rel="stylesheet" href="styles.css" />
+     <!-- Pro Developer's Media Queries CSS -->
+     <link rel="stylesheet" href="media-queries.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Additional CSS for video containers and centering */
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+
+      .video-container iframe {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .video-wrapper {
+        width: 50%;
+        float: left;
+      }
+
+      .copyright {
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body class="background-element">
+    <header>
+      <a href="index.html"
+        ><img
+          id="myLogo"
+          src="Assets/logo.png"
+          alt=" logo for Dog Hall of Fame"
+          height="80"
+          width="100"
+      /></a>
+      <nav id="navlist">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html" class="active">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <!-- mob nav -->
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html"><img style="width: 62px; height: 62px;"
+            id="myLogo1"
+            src="Assets/logo.png"
+            alt=" logo for Dog Hall of Fame"
+            height="80"
+            width="100"
+        /></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="winners.html">Winners</a>
+        <a href="nominations.html">Nominations</a>
+        <a href="services.html">Services</a>
+        <a href="About Us.html">About Us</a>
+          <a style=" margin-top: 23px;
+          margin-right: 15px;
+          padding: 10px;" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    
+    <!-- /mob nav -->
+    <main>
+      <h1>Nominations</h1>
+      <!-- Video container -->
+      <div class="video-wrapper">
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/G12HU8zDetc?autoplay=1"
+            title="Video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="copyright">&copy; Copyrights to The Kennel Club</div>
+      </div>
+
+      <div class="video-wrapper">
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vkxggodZzqc?autoplay=1"
+            title="Video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="copyright">&copy; Copyrights to The Kennel Club</div>
+      </div>
+    </main>
+    <br>
+    <br>
+    <br>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Dog's <span>Hall of Fame</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <span class="footer-about-us">
+          <p>
+            Dog's Hall of Fame honors exceptional dogs who have made a lasting
+            impact. Discover inspiring stories of bravery, loyalty, and
+            remarkable achievements. Join us as we celebrate the profound bond
+            between humans and dogs. Explore the extraordinary accomplishments
+            of our inductees and be inspired by their incredible journeys.
+            Experience the power of the canine spirit at the Dog's Hall of Fame.
+          </p>
+        </span>
+        <p class="footer-company-name">Dog's Hall of Fame © 2023</p>
+      </div>
+
+      <div class="footer-right">
+        <p>Contact Us</p>
+
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+  <script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  </script>
+    
+      </script>
+</html>

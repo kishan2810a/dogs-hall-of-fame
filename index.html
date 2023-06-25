@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<!-- Kishan, ArunaiKumar - 05/22/2023 -->
+<!-- Lavanya, Rachakula - 05/22/2023 -->
+<!-- Sai Kumar, Gajjela - 05/22/2023 -->
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- Favicon and title -->
+    <link rel="icon" href="Assets/tab_icon.png" type="image/png" />
+    <title>Dog's Hall of Fame</title>
+
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Pro Developer's Media Queries CSS -->
+    <link rel="stylesheet" href="media-queries.css">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+  </head>
+
+  <body class="background-element">
+    <header>
+      <!-- Logo and navigation -->
+      <a class="hideCss" href="#"
+        ><img
+          id="myLogo1"
+          src="Assets/logo.png"
+          alt=" logo for Dog Hall of Fame"
+          height="80"
+          width="100"
+      /></a>
+      <div class="container">
+        <div class="navbar-toggle">
+          <div class="hamburger">
+            
+          </div>
+        </div>
+        <nav id="navlist">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="winners.html">Winners</a></li>
+            <li><a href="nominations.html">Nominations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+
+
+    <!-- mob nav -->
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"><img style="width: 62px; height: 62px;"
+        id="myLogo1"
+        src="Assets/logo.png"
+        alt=" logo for Dog Hall of Fame"
+        height="80"
+        width="100"
+    /></a>
+    <a href="index.html" class="active">Home</a>
+    <a href="winners.html">Winners</a>
+    <a href="nominations.html">Nominations</a>
+    <a href="services.html">Services</a>
+    <a href="About Us.html">About Us</a>
+      <a style=" margin-top: 23px;
+      margin-right: 15px;
+      padding: 10px;" href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<!-- /mob nav -->
+    
+
+
+
+
+    <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <!-- Slide 1 -->
+          <div class="numbertext">1 / 3</div>
+          <div class="slide-content">
+            <h3>Canine Championship: <span>Hero Dog</span></h3>
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Assets/Working dog1.png"
+                  height="200"
+                  width="220"
+                  alt="Working Dog"
+                />
+              </div>
+              <div class="column">
+                <p class="justify">
+                  <!-- First paragraph content -->
+                  A 7-year-old boy discovered a stray dog beneath a 3-meter pit
+                  across the street during a snowstorm. The dog's owner slipped
+                  and fell into the hole as he tried to reach and pull under to
+                  save it. A missing person report was filed for the boy. The
+                  dog was repeatedly barking and howling when the boy was found
+                  inside the pit three days later. Dogs protected a boy from
+                  freezing weather by covering him.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <!-- Slide 2 -->
+          <div class="numbertext">2 / 3</div>
+          <div class="slide-content">
+            <h3>Workaholic: <span>Best Working Canine</span></h3>
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Assets/herodog1.jpg"
+                  height="200"
+                  width="220"
+                  alt="Working Dog"
+                />
+              </div>
+              <div class="column">
+                <p class="justify">
+                  <!-- Second paragraph content -->
+                  K9 Officer Max, a German Shepherd, is a shining example of a
+                  working dog dedicated to protecting people. Max is a highly
+                  trained police service dog who assists law enforcement in
+                  various tasks, including tracking suspects, apprehending
+                  criminals, and detecting narcotics. With his keen sense of
+                  smell, intelligence, and unwavering loyalty, Max has been
+                  instrumental in ensuring public safety and supporting his
+                  human counterparts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <!-- Slide 3 -->
+          <div class="numbertext">3 / 3</div>
+          <div class="slide-content">
+            <h3>Man's Best Friend: <span>Companion Dog</span></h3>
+            <div class="row">
+              <div class="column">
+                <img
+                  src="Assets/Companion dog1.png"
+                  height="200"
+                  width="220"
+                  alt="Working Dog"
+                />
+              </div>
+              <div class="column">
+                <p class="justify">
+                  <!-- Third paragraph content -->
+                  George, a Great Dane service dog, helped a little girl named
+                  Bella walk again. The 11-year-old girl suffers from Morquio
+                  Syndrome and thought she’d spent her life on crutches or in a
+                  wheelchair. But all of that changed when she met George
+                  (Michaels, 2022). Until Bella got George 20 months ago, she
+                  had to rely on crutches and a wheelchair to get around. Then
+                  Bella learned to lean on George, a fun activity that also
+                  strengthened her legs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <br />
+
+      <!-- Slide navigation dots -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </main>
+
+    <!-- JavaScript for slideshow functionality -->
+    <script type="text/javascript" src="carousel.js"></script>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Dog's <span>Hall of Fame</span></h3>
+        <p class="footer-links">
+          <!-- Footer links -->
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <div class="footer-icons">
+          <!-- Social media icons -->
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-github"></a>
+        </div>
+
+        <span class="footer-about-us">
+          <!-- Footer about us content -->
+          <p>
+            Dog's Hall of Fame honors exceptional dogs who have made a lasting
+            impact. Discover inspiring stories of bravery, loyalty, and
+            remarkable achievements. Join us as we celebrate the profound bond
+            between humans and dogs. Explore the extraordinary accomplishments
+            of our inductees and be inspired by their incredible journeys.
+            Experience the power of the canine spirit at the Dog's Hall of Fame.
+          </p>
+        </span>
+        <br />
+
+        <!-- Footer company name -->
+        <p class="footer-company-name">Dog's Hall of Fame © 2023</p>
+      </div>
+
+      <div class="footer-right">
+        <p>Contact Us</p>
+        <!-- Contact form -->
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+  <script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  </script>
+</html>
